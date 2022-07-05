@@ -1,0 +1,165 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+*{
+  margin-top: 0; 
+  margin-bottom: 0; 
+  margin-left: 0; 
+  margin-right: 0;
+ }
+ .bg-img {
+   
+  background-image: url("../images/bg.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.bg-imgd {
+   
+  background-image: url("../images/bg d.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.bg-imgsio {
+   
+  background-image: url("../images/bg sio.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.bg-imgp {
+   
+  background-image: url("../images/bg p.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+/*nvbar*/
+.container {
+  position: fixed;
+  top:0;
+  width: 100%;
+  opacity: 80%;
+  background:linear-gradient(#292929, #000000);
+}
+
+/* general styles */
+.menu, .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu {
+  height: 40px;
+}
+.menu li {  
+  background:linear-gradient(#292929, #000000);
+  border-bottom: 2px solid #181818;
+  border-top: 2px solid #303030;
+  min-width: 160px;
+}
+.menu > li {
+  display: block;
+  float: left;
+  position: relative;
+}
+.menu > li:first-child {
+  border-radius: 5px 0 0;
+}
+.menu a {
+  border-left: 3px solid rgba(0, 0, 0, 0);
+  color: #808080;
+  display: block;
+  font-family: 'Lucida Console';
+  font-size: 18px;
+  line-height: 40px;
+  
+  padding: 0 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* onhover styles */
+.menu li:hover {
+  background: linear-gradient(#292929, #002fff);
+
+  border-bottom: 2px solid #222222;
+  border-top: 2px solid #1B1B1B;
+}
+.menu li:hover > a {
+  border-radius: 5px 0 0 0;
+  border-left: 3px solid #00e1ff;
+  color: #00b7ff;
+}
+
+/* submenu styles */
+.submenu {
+  left: 0;
+  max-height: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 0;
+  perspective: 400px;
+}
+.submenu li {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity .4s, transform .5s;
+}
+.menu .submenu li:hover a {
+  border-left: 3px solid #00e1ff;
+  border-radius: 0;
+  color: #00b7ff;
+}
+.menu > li:hover .submenu, .menu > li:focus .submenu {
+  max-height: 2000px;
+  z-index: 10;
+}
+.menu > li:hover .submenu li, .menu > li:focus .submenu li {
+  opacity: 1;
+  transform: none;
+}
+
+/* CSS3 delays for transition effects */
+.menu li:hover .submenu li:nth-child(1) {
+  transition-delay: 0s;
+}
+.menu li:hover .submenu li:nth-child(2) {
+  transition-delay: 50ms;
+}
+.menu li:hover .submenu li:nth-child(3) {
+  transition-delay: 100ms;
+}
+.menu li:hover .submenu li:nth-child(4) {
+  transition-delay: 150ms;
+}
+
+.submenu li:nth-child(1) {
+
+  transition-delay: 350ms;
+}
+.submenu li:nth-child(2) {
+
+  transition-delay: 300ms;
+}
+.submenu li:nth-child(3) {
+
+  transition-delay: 250ms;
+}
+.submenu li:nth-child(4) {
+  
+  transition-delay: 200ms;
+}

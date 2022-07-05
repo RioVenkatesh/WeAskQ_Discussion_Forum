@@ -1,0 +1,93 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+ .linepost {
+  position: fixed;
+    top:45%;
+    left:2%;
+   text-align: center;
+   text-shadow: 1px 1px 2px black;
+   background-image: url("../icons/Sheet.png");
+   width: 17%; 
+   height: 45%;
+   overflow: hidden;
+  }
+  
+  .banner{
+    position: fixed;
+    top: 9%;
+    right: 2%;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;  
+    background-image: url("../icons/Sheet.png");
+    width: 20%;
+    height: auto;
+    overflow: visible;
+  }
+  .bannerhov:hover{
+    background-color: rgb(3, 3, 3);
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    transform: scale(1.2,1.2);
+    opacity: 80%;
+    }
+     /*index*/
+ .title{
+  padding-top:7.5%;
+  font-size:100px;
+  text-align:center;
+  color:white;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(148, 195, 248), 0 0 20px rgb(104, 156, 253), 0 0 30px #6a78f8;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(20, 3, 94), 0 0 30px #320ac2, 0 0 40px #2905f5;
+  }
+}
+  /*profile*/
+  img{
+    position: absolute;
+    left: 33%;
+    top: 11%;
+    float: right;
+    width: 15%;
+    height: 30%;
+  }
+  img:hover{
+   
+    box-shadow: inset 10px 10px 50px rgb(65, 65, 65);
+    border-radius:100%;
+    
+  }
+  .username{
+    position: absolute;
+    left: 32%;
+    top: 40%;
+    float:right;
+    text-shadow:3px 5px black;
+    color: white;
+    font-size: 60px;
+  }
+  .userdetails{
+    position: absolute;
+    left: 23%;
+    top: 60%;
+    text-shadow:2px 2px rgb(8, 1, 110);
+    text-align: justify;
+    color: white;
+    font-size: 40px;
+  }
+  .bannerprofile{
+    position: fixed;
+    top: 9%;
+    right: 2%;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;  
+    background-image: url("../icons/Sheet.png");
+    width: 22%;
+    height: 90%;
+    overflow: scroll;
+  }

@@ -1,0 +1,141 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+button.button2
+  {
+    position:fixed;
+    bottom: 2%;
+    left: 7%;
+    background:radial-gradient(blue,black);
+    border-radius: 10px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    height:35px; 
+    width:90px;
+    cursor: pointer;
+  }
+  
+  button.button2:hover
+  {
+    background:radial-gradient(black,blue);
+    color: rgb(255, 255, 255);
+    box-shadow: -3px -5px 20px 3px blue , 3px 3px 20px 3px rgb(255, 0, 221);
+  }
+  button.button2:active
+  {
+    background:radial-gradient(blue,black);
+    color:rgb(255, 255, 255);
+  }
+  
+  /*searchbar*/
+.searchBox {
+  position: fixed;
+  bottom: 0;
+  right: 12%;
+  transform:  translate(50%,-50%);
+  background: #ffffff;
+  height: 20px;
+  border-right: 10px solid transparent;
+  border-top: 5px solid rgb(0, 4, 255);
+  border-left: 5px solid rgb(0, 17, 255);
+  border-bottom: 5px solid rgb(0, 195, 255);
+  border-right: 5px solid rgb(0, 247, 255);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 160px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+background: rgb(0, 0, 0);
+color : #ffffff;
+}
+
+.searchButton {
+  color: rgb(255, 255, 255);
+   text-shadow: 1px 1px 2px black;
+   font-size: 10px;
+  float: right;
+  width: 70px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0104c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  transition: 0.4s;
+  width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+  width: 150px;
+  padding: 0 6px;
+}
+}
+  /*contact*/
+ .teamname{
+  color:white;
+  font-size:60px;
+  text-align:center;
+  padding-top:10%;
+  text-shadow: 2px 3px 3px black;
+ }
+  .whatsapp img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    background: transparent;
+    transition: width .5s, height .5s, transform .5s; 
+    
+  }
+  .insta img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    background: transparent;
+    transition: width .5s, height .5s, transform .5s; 
+   
+  }
+  .facebook img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    background: transparent;
+    transition: width .5s, height .5s, transform .5s; 
+    
+  }
+img:hover {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+  transform: rotate(360deg);  
+  }
+  img:active{
+    width: 200px;
+    height: 200px;
+    border-color: black;
+  transform: rotate(360deg);
+  }
